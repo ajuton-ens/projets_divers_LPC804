@@ -10,7 +10,7 @@
 
 uint8_t answerReceived = 1;
 
-void encodeMessageAndSendMessage(uint8_t motorID, uint8_t length, uint8_t instruction, uint8_t *payload)
+void encodeAndSendMessage(uint8_t motorID, uint8_t length, uint8_t instruction, uint8_t *payload)
 {
 	uint8_t message[length + 4];
 	uint8_t i = 0, j;

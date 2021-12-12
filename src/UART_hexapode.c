@@ -21,7 +21,6 @@ void init_UART0(uint32_t baudrate)
 
 	LPC_USART0->CFG = 1 ;							//UART Enable, no parity, 1 stop bit, asynchronous, Normal mode,
 	LPC_USART0->CFG |= (1 << 2);					//8 bits
-	LPC_USART0->INTENSET |= RXRDY;					//Interruption sur reception d'un octet
 	LPC_USART0->BRG = (uint32_t)BRGVAL(baudrate);	// baud
 
 	NVIC->ISER[0] |= (1 << (uint32_t)UART0_IRQn);
@@ -39,18 +38,6 @@ void UART0_IRQHandler()
 		CB_RX0_Add(LPC_USART0->RXDAT);
 	else if (LPC_USART0->INTSTAT & TXIDLE)
 		UART0_sendOne();
-}
-
-uint8_t UART0_checkCharacterReception(uint8_t *character)
-{
-	*character = 0;
-	if (LPC_USART0->STAT & RXRDY)
-	{
-		*character = LPC_USART0->RXDAT;
-		return 1;
-	}
-	else
-		return 0;
 }
 
 void UART0_sendOne()

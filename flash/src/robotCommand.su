@@ -1,2 +1,2 @@
-../src/robotCommand.c:11:6:setMotorPosition	32	static
-../src/robotCommand.c:24:6:initMotorLimits	8	static
+../src/robotCommand.c:49:6:setMotorPosition	40	static
+../src/robotCommand.c:64:6:initMotorLimits	8	static

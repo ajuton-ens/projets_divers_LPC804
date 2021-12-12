@@ -33,6 +33,7 @@ void MRT_IRQHandler()
 	//Vérifier si on a des charactères à traiter
 	if (CB_RX0_IsDataAvailable())
 		decodeMessage(CB_RX0_Get());
+
 }
 
 void MRT0_setFrequency(float frequency)

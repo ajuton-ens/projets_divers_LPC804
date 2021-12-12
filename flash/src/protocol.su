@@ -1,4 +1,4 @@
-../src/protocol.c:13:6:encodeMessageAndSendMessage	72	dynamic
+../src/protocol.c:13:6:encodeAndSendMessage	72	dynamic
 ../src/protocol.c:35:6:decodeMessage	16	static
 ../src/protocol.c:87:6:processDecodedMessage	24	static
 ../src/protocol.c:100:9:calculateChecksum	32	static

@@ -29,7 +29,7 @@ all: TP_HEXAPODE.axf
 TP_HEXAPODE.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash" -L"C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\utilities_lib\flash" -Xlinker -Map="TP_HEXAPODE.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0 -mthumb -T "TP3_Timer_flash.ld" -o "TP_HEXAPODE.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash" -L"C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\utilities_lib\flash" -Xlinker -Map="TP_HEXAPODE.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0 -mthumb -T "TP3_Timer_flash.ld" -o "TP_HEXAPODE.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

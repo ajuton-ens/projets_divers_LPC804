@@ -1,8 +1,8 @@
 Archive member included to satisfy reference by file (symbol)
 
-C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
                               ./src/lib_ENS_II1_lcd.o (I2CmasterWrite)
-C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
                               ./src/UART_hexapode.o (ConfigSWM)
 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(_cr__main.o)
                               ./src/MCUXpresso_cr_startup.o (__main)
@@ -142,7 +142,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x11 ./src/MCUXpresso_mtb.o
  .debug_macro   0x00000000      0xa6c ./src/MCUXpresso_mtb.o
  .debug_line    0x00000000       0x38 ./src/MCUXpresso_mtb.o
- .debug_str     0x00000000     0x2c9e ./src/MCUXpresso_mtb.o
+ .debug_str     0x00000000     0x2c91 ./src/MCUXpresso_mtb.o
  .comment       0x00000000       0x4e ./src/MCUXpresso_mtb.o
  .ARM.attributes
                 0x00000000       0x31 ./src/MCUXpresso_mtb.o
@@ -190,8 +190,6 @@ Discarded input sections
  .text          0x00000000        0x0 ./src/UART_hexapode.o
  .data          0x00000000        0x0 ./src/UART_hexapode.o
  .bss           0x00000000        0x0 ./src/UART_hexapode.o
- .text.UART0_checkCharacterReception
-                0x00000000       0x34 ./src/UART_hexapode.o
  .debug_macro   0x00000000      0xa6c ./src/UART_hexapode.o
  .debug_macro   0x00000000       0x10 ./src/UART_hexapode.o
  .debug_macro   0x00000000      0x12e ./src/UART_hexapode.o
@@ -290,6 +288,10 @@ Discarded input sections
  .text          0x00000000        0x0 ./src/protocol.o
  .data          0x00000000        0x0 ./src/protocol.o
  .bss           0x00000000        0x0 ./src/protocol.o
+ .text.isAnswerReceived
+                0x00000000       0x14 ./src/protocol.o
+ .text.setAnswerWaiting
+                0x00000000       0x14 ./src/protocol.o
  .debug_macro   0x00000000      0xa6c ./src/protocol.o
  .debug_macro   0x00000000       0x10 ./src/protocol.o
  .debug_macro   0x00000000      0x12e ./src/protocol.o
@@ -362,80 +364,64 @@ Discarded input sections
  .text          0x00000000        0x0 ./src/toolbox.o
  .data          0x00000000        0x0 ./src/toolbox.o
  .bss           0x00000000        0x0 ./src/toolbox.o
- .text.limitToInterval
-                0x00000000       0x36 ./src/toolbox.o
  .text.round    0x00000000       0x30 ./src/toolbox.o
- .debug_info    0x00000000       0xf1 ./src/toolbox.o
- .debug_abbrev  0x00000000       0x98 ./src/toolbox.o
- .debug_aranges
-                0x00000000       0x28 ./src/toolbox.o
- .debug_ranges  0x00000000       0x18 ./src/toolbox.o
- .debug_macro   0x00000000       0x4c ./src/toolbox.o
  .debug_macro   0x00000000      0xa6c ./src/toolbox.o
  .debug_macro   0x00000000       0x10 ./src/toolbox.o
  .debug_macro   0x00000000      0x12e ./src/toolbox.o
  .debug_macro   0x00000000      0x5b3 ./src/toolbox.o
- .debug_line    0x00000000      0x210 ./src/toolbox.o
- .debug_str     0x00000000     0x43b4 ./src/toolbox.o
- .comment       0x00000000       0x4e ./src/toolbox.o
- .debug_frame   0x00000000       0x50 ./src/toolbox.o
- .ARM.attributes
-                0x00000000       0x2c ./src/toolbox.o
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .text          0x00000000        0x0 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .data          0x00000000        0x0 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .bss           0x00000000        0x0 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .text.I2CmasterRead
-                0x00000000       0x98 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .text          0x00000000        0x0 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .data          0x00000000        0x0 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .bss           0x00000000        0x0 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
  .text.I2CmasterWriteRead
-                0x00000000       0xc8 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+                0x00000000       0xc8 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
  .text.WaitI2CSlaveState
-                0x00000000       0x32 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_macro   0x00000000       0x28 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_macro   0x00000000       0x3a C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_macro   0x00000000       0x10 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_macro   0x00000000      0x12e C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_macro   0x00000000      0x5b3 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_macro   0x00000000      0x241 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_macro   0x00000000      0x1a8 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_macro   0x00000000      0x3a2 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_macro   0x00000000       0x40 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_macro   0x00000000       0xe8 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .group         0x00000000        0xc C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .text          0x00000000        0x0 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .data          0x00000000        0x0 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .bss           0x00000000        0x0 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+                0x00000000       0x32 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_macro   0x00000000       0x28 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_macro   0x00000000       0x3a C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_macro   0x00000000       0x10 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_macro   0x00000000      0x12e C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_macro   0x00000000      0x241 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_macro   0x00000000      0x1a8 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_macro   0x00000000      0x3a2 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_macro   0x00000000       0x40 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_macro   0x00000000       0xe8 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .group         0x00000000        0xc C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .text          0x00000000        0x0 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .data          0x00000000        0x0 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .bss           0x00000000        0x0 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
  .text.EnableFixedPinFunc
-                0x00000000       0x4c C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+                0x00000000       0x4c C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
  .text.DisableFixedPinFunc
-                0x00000000       0x48 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .debug_macro   0x00000000      0xa66 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .debug_macro   0x00000000       0x28 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .debug_macro   0x00000000       0x3a C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .debug_macro   0x00000000       0x10 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .debug_macro   0x00000000      0x12e C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .debug_macro   0x00000000      0x5b3 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .debug_macro   0x00000000      0x241 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .debug_macro   0x00000000      0x1a8 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
- .debug_macro   0x00000000      0x39c C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+                0x00000000       0x48 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_macro   0x00000000      0xa66 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_macro   0x00000000       0x28 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_macro   0x00000000       0x3a C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_macro   0x00000000       0x10 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_macro   0x00000000      0x12e C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_macro   0x00000000      0x241 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_macro   0x00000000      0x1a8 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_macro   0x00000000      0x39c C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
  .text          0x00000000        0x0 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(_cr__main.o)
  .data          0x00000000        0x0 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(_cr__main.o)
  .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(_cr__main.o)
@@ -602,30 +588,20 @@ Discarded input sections
                 0x00000000        0x8 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
  .text.__aeabi_f2iz
                 0x00000000       0x3c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
- .text.__aeabi_f2uiz
-                0x00000000       0x2a c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
  .text.__aeabi_f2lz
                 0x00000000       0x68 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
  .text.__aeabi_f2ulz
                 0x00000000       0x3e c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
- .text.__bhs_ui2f
-                0x00000000       0x60 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
  .text.__bhs_ul2f
                 0x00000000       0x80 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
  .text.__aeabi_i2f
                 0x00000000       0x18 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
- .text.__aeabi_ui2f
-                0x00000000        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
  .text.__aeabi_l2f
                 0x00000000       0x24 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
  .text.__aeabi_ul2f
                 0x00000000        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
  .text.__aeabi_fcmpeq
                 0x00000000       0x20 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
- .text.__aeabi_fcmplt
-                0x00000000       0x42 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
- .text.__aeabi_fcmpgt
-                0x00000000       0x3e c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
  .text.__aeabi_fcmple
                 0x00000000       0x44 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
  .text.__aeabi_fcmpge
@@ -722,8 +698,8 @@ LOAD ./src/protocol.o
 LOAD ./src/robotCommand.o
 LOAD ./src/system.o
 LOAD ./src/toolbox.o
-LOAD C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a
-LOAD C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\utilities_lib\flash\libutilities_lib.a
+LOAD C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a
+LOAD C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\utilities_lib\flash\libutilities_lib.a
 START GROUP
 LOAD c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a
 LOAD c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a
@@ -739,7 +715,7 @@ END GROUP
                 0x10001000                __top_RamLoc4 = 0x10001000
                 0x10001000                __top_RAM = 0x10001000
 
-.text           0x00000000     0x1e84
+.text           0x00000000     0x20d4
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -748,7 +724,7 @@ END GROUP
                 0x000000c0                . = ALIGN (0x4)
                 0x000000c0                __section_table_start = .
                 0x000000c0                __data_section_table = .
-                0x000000c0        0x4 LONG 0x1e84 LOADADDR (.data)
+                0x000000c0        0x4 LONG 0x20d4 LOADADDR (.data)
                 0x000000c4        0x4 LONG 0x10000000 ADDR (.data)
                 0x000000c8        0x4 LONG 0x4 SIZEOF (.data)
                 0x000000cc                __data_section_table_end = .
@@ -814,225 +790,245 @@ END GROUP
                 0x000003ac       0x48 ./src/CB_RX0.o
                 0x000003ac                CB_RX0_GetRemainingSize
  .text.SendMessage
-                0x000003f4       0x84 ./src/CB_TX0.o
+                0x000003f4       0x78 ./src/CB_TX0.o
                 0x000003f4                SendMessage
  .text.CB_TX0_Add
-                0x00000478       0x40 ./src/CB_TX0.o
-                0x00000478                CB_TX0_Add
+                0x0000046c       0x40 ./src/CB_TX0.o
+                0x0000046c                CB_TX0_Add
  .text.CB_TX0_Get
-                0x000004b8       0x40 ./src/CB_TX0.o
-                0x000004b8                CB_TX0_Get
+                0x000004ac       0x40 ./src/CB_TX0.o
+                0x000004ac                CB_TX0_Get
  .text.CB_TX0_endTransmission
-                0x000004f8       0x14 ./src/CB_TX0.o
-                0x000004f8                CB_TX0_endTransmission
+                0x000004ec       0x14 ./src/CB_TX0.o
+                0x000004ec                CB_TX0_endTransmission
  .text.CB_TX0_RemainingSize
-                0x0000050c       0x48 ./src/CB_TX0.o
-                0x0000050c                CB_TX0_RemainingSize
+                0x00000500       0x48 ./src/CB_TX0.o
+                0x00000500                CB_TX0_RemainingSize
  .text.CB_TX0_GetDataSize
-                0x00000554       0x22 ./src/CB_TX0.o
-                0x00000554                CB_TX0_GetDataSize
- *fill*         0x00000576        0x2 ff
+                0x00000548       0x22 ./src/CB_TX0.o
+                0x00000548                CB_TX0_GetDataSize
+ *fill*         0x0000056a        0x2 ff
  .text.init_GPIO
-                0x00000578       0x38 ./src/GPIO_hexapode.o
-                0x00000578                init_GPIO
+                0x0000056c       0x38 ./src/GPIO_hexapode.o
+                0x0000056c                init_GPIO
  .text.init_MRT0
-                0x000005b0       0x64 ./src/MRT_hexapode.o
-                0x000005b0                init_MRT0
+                0x000005a4       0x64 ./src/MRT_hexapode.o
+                0x000005a4                init_MRT0
  .text.MRT_IRQHandler
-                0x00000614       0x30 ./src/MRT_hexapode.o
-                0x00000614                MRT_IRQHandler
+                0x00000608       0x30 ./src/MRT_hexapode.o
+                0x00000608                MRT_IRQHandler
  .text.MRT0_setFrequency
-                0x00000644       0x3c ./src/MRT_hexapode.o
-                0x00000644                MRT0_setFrequency
+                0x00000638       0x3c ./src/MRT_hexapode.o
+                0x00000638                MRT0_setFrequency
  .text.init_UART0
-                0x00000680       0xc8 ./src/UART_hexapode.o
-                0x00000680                init_UART0
+                0x00000674       0xbc ./src/UART_hexapode.o
+                0x00000674                init_UART0
  .text.UART0_IRQHandler
-                0x00000748       0x34 ./src/UART_hexapode.o
-                0x00000748                UART0_IRQHandler
+                0x00000730       0x34 ./src/UART_hexapode.o
+                0x00000730                UART0_IRQHandler
  .text.UART0_sendOne
-                0x0000077c       0x34 ./src/UART_hexapode.o
-                0x0000077c                UART0_sendOne
+                0x00000764       0x34 ./src/UART_hexapode.o
+                0x00000764                UART0_sendOne
  .text.UART0_beginTransmission
-                0x000007b0       0x24 ./src/UART_hexapode.o
-                0x000007b0                UART0_beginTransmission
+                0x00000798       0x24 ./src/UART_hexapode.o
+                0x00000798                UART0_beginTransmission
  .text.UART0_endTransmission
-                0x000007d4       0x20 ./src/UART_hexapode.o
-                0x000007d4                UART0_endTransmission
+                0x000007bc       0x20 ./src/UART_hexapode.o
+                0x000007bc                UART0_endTransmission
  .text.init_lcd
-                0x000007f4      0x2bc ./src/lib_ENS_II1_lcd.o
-                0x000007f4                init_lcd
- .text.main     0x00000ab0      0x124 ./src/main.o
-                0x00000ab0                main
+                0x000007dc      0x2bc ./src/lib_ENS_II1_lcd.o
+                0x000007dc                init_lcd
+ .text.main     0x00000a98      0x1c8 ./src/main.o
+                0x00000a98                main
  .text.init_peripherals
-                0x00000bd4       0x50 ./src/main.o
-                0x00000bd4                init_peripherals
+                0x00000c60       0x50 ./src/main.o
+                0x00000c60                init_peripherals
  .text.telerupteur
-                0x00000c24       0x58 ./src/main.o
-                0x00000c24                telerupteur
- .text.encodeMessageAndSendMessage
-                0x00000c7c      0x1c8 ./src/protocol.o
-                0x00000c7c                encodeMessageAndSendMessage
+                0x00000cb0       0x58 ./src/main.o
+                0x00000cb0                telerupteur
+ .text.encodeAndSendMessage
+                0x00000d08      0x1c8 ./src/protocol.o
+                0x00000d08                encodeAndSendMessage
  .text.decodeMessage
-                0x00000e44      0x120 ./src/protocol.o
-                0x00000e44                decodeMessage
+                0x00000ed0      0x120 ./src/protocol.o
+                0x00000ed0                decodeMessage
  .text.processDecodedMessage
-                0x00000f64       0x28 ./src/protocol.o
-                0x00000f64                processDecodedMessage
+                0x00000ff0       0x28 ./src/protocol.o
+                0x00000ff0                processDecodedMessage
  .text.calculateChecksum
-                0x00000f8c       0x92 ./src/protocol.o
-                0x00000f8c                calculateChecksum
- *fill*         0x0000101e        0x2 ff
- .text.isAnswerReceived
-                0x00001020       0x14 ./src/protocol.o
-                0x00001020                isAnswerReceived
- .text.setAnswerWaiting
-                0x00001034       0x14 ./src/protocol.o
-                0x00001034                setAnswerWaiting
+                0x00001018       0x92 ./src/protocol.o
+                0x00001018                calculateChecksum
+ *fill*         0x000010aa        0x2 ff
  .text.setAnswerReceived
-                0x00001048       0x14 ./src/protocol.o
-                0x00001048                setAnswerReceived
+                0x000010ac       0x14 ./src/protocol.o
+                0x000010ac                setAnswerReceived
  .text.setMotorPosition
-                0x0000105c       0xac ./src/robotCommand.o
-                0x0000105c                setMotorPosition
+                0x000010c0      0x100 ./src/robotCommand.o
+                0x000010c0                setMotorPosition
  .text.SystemInit
-                0x00001108       0x90 ./src/system.o
-                0x00001108                SystemInit
+                0x000011c0       0x90 ./src/system.o
+                0x000011c0                SystemInit
+ .text.limitToInterval
+                0x00001250       0x36 ./src/toolbox.o
+                0x00001250                limitToInterval
+ *fill*         0x00001286        0x2 ff
  .text.I2CmasterWrite
-                0x00001198       0x78 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
-                0x00001198                I2CmasterWrite
+                0x00001288       0x78 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+                0x00001288                I2CmasterWrite
  .text.WaitI2CMasterState
-                0x00001210       0x2e C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
-                0x00001210                WaitI2CMasterState
- *fill*         0x0000123e        0x2 ff
+                0x00001300       0x2e C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+                0x00001300                WaitI2CMasterState
+ *fill*         0x0000132e        0x2 ff
  .text.ConfigSWM
-                0x00001240       0x80 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
-                0x00001240                ConfigSWM
- .text.__main   0x000012c0        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(_cr__main.o)
-                0x000012c0                __CR_SEMIHOST
-                0x000012c0                __main
- .text._initio  0x000012cc       0x7c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(initio.o)
-                0x000012cc                _initio
- .text.setvbuf  0x00001348       0x4c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(setvbuf.o)
-                0x00001348                setvbuf
- .text._fdopen  0x00001394       0x74 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_fdopen.o)
-                0x00001394                _fdopen
- .text.fclose   0x00001408       0x5c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(fclose.o)
-                0x00001408                fclose
- .text.fflush   0x00001464       0x44 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(fflush.o)
-                0x00001464                fflush
- .text.fseek    0x000014a8       0xf0 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(fseek.o)
-                0x000014a8                fseek
- .text.ftell    0x00001598       0x48 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(ftell.o)
-                0x00001598                ftell
- .text.remove   0x000015e0       0x12 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(remove.o)
-                0x000015e0                remove
- *fill*         0x000015f2        0x2 ff
- .text.strlen   0x000015f4       0x58 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
-                0x000015f4                strlen
- .text.memset   0x0000164c        0x8 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
-                0x0000164c                memset
+                0x00001330       0x80 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+                0x00001330                ConfigSWM
+ .text.__main   0x000013b0        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(_cr__main.o)
+                0x000013b0                __CR_SEMIHOST
+                0x000013b0                __main
+ .text._initio  0x000013bc       0x7c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(initio.o)
+                0x000013bc                _initio
+ .text.setvbuf  0x00001438       0x4c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(setvbuf.o)
+                0x00001438                setvbuf
+ .text._fdopen  0x00001484       0x74 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_fdopen.o)
+                0x00001484                _fdopen
+ .text.fclose   0x000014f8       0x5c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(fclose.o)
+                0x000014f8                fclose
+ .text.fflush   0x00001554       0x44 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(fflush.o)
+                0x00001554                fflush
+ .text.fseek    0x00001598       0xf0 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(fseek.o)
+                0x00001598                fseek
+ .text.ftell    0x00001688       0x48 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(ftell.o)
+                0x00001688                ftell
+ .text.remove   0x000016d0       0x12 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(remove.o)
+                0x000016d0                remove
+ *fill*         0x000016e2        0x2 ff
+ .text.strlen   0x000016e4       0x58 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+                0x000016e4                strlen
+ .text.memset   0x0000173c        0x8 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+                0x0000173c                memset
  .text._do_fflush
-                0x00001654       0x48 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_do_fflush.o)
-                0x00001654                _do_fflush
- .text._fflush  0x0000169c       0x60 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_fflush.o)
-                0x0000169c                _fflush
+                0x00001744       0x48 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_do_fflush.o)
+                0x00001744                _do_fflush
+ .text._fflush  0x0000178c       0x60 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_fflush.o)
+                0x0000178c                _fflush
  .text._Cwritebuf
-                0x000016fc       0x68 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_writebuf.o)
-                0x000016fc                _Cwritebuf
- .text.free     0x00001764       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(alloc.o)
-                0x00001764                free
+                0x000017ec       0x68 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_writebuf.o)
+                0x000017ec                _Cwritebuf
+ .text.free     0x00001854       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(alloc.o)
+                0x00001854                free
  .text._deferredlazyseek
-                0x00001790       0x40 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_deferredlazyseek.o)
-                0x00001790                _deferredlazyseek
+                0x00001880       0x40 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_deferredlazyseek.o)
+                0x00001880                _deferredlazyseek
  .text.__aeabi_ddiv
-                0x000017d0      0x14c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
-                0x000017d0                __aeabi_ddiv
+                0x000018c0      0x14c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
+                0x000018c0                __aeabi_ddiv
  .text.__aeabi_dsub
-                0x0000191c      0x1c0 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
-                0x0000191c                __aeabi_dsub
+                0x00001a0c      0x1c0 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
+                0x00001a0c                __aeabi_dsub
  .text.__aeabi_dadd
-                0x00001adc      0x134 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
-                0x00001adc                __aeabi_dadd
+                0x00001bcc      0x134 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
+                0x00001bcc                __aeabi_dadd
  .text.__aeabi_d2uiz
-                0x00001c10       0x38 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
-                0x00001c10                __aeabi_d2uiz
+                0x00001d00       0x38 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
+                0x00001d00                __aeabi_d2uiz
  .text.__bhs_ui2d
-                0x00001c48       0x5e c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
-                0x00001c48                __bhs_ui2d
+                0x00001d38       0x5e c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
+                0x00001d38                __bhs_ui2d
  .text.__aeabi_ui2d
-                0x00001ca6        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
-                0x00001ca6                __aeabi_ui2d
- *fill*         0x00001cb2        0x2 ff
+                0x00001d96        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
+                0x00001d96                __aeabi_ui2d
+ *fill*         0x00001da2        0x2 ff
  .text.__aeabi_fmul
-                0x00001cb4       0xc0 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
-                0x00001cb4                __aeabi_fmul
+                0x00001da4       0xc0 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
+                0x00001da4                __aeabi_fmul
+ .text.__aeabi_f2uiz
+                0x00001e64       0x2a c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
+                0x00001e64                __aeabi_f2uiz
+ .text.__bhs_ui2f
+                0x00001e8e       0x60 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
+                0x00001e8e                __bhs_ui2f
+ .text.__aeabi_ui2f
+                0x00001eee        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
+                0x00001eee                __aeabi_ui2f
+ *fill*         0x00001efa        0x2 ff
  .text.__aeabi_f2d
-                0x00001d74       0x40 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
-                0x00001d74                __aeabi_f2d
+                0x00001efc       0x40 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
+                0x00001efc                __aeabi_f2d
+ .text.__aeabi_fcmplt
+                0x00001f3c       0x42 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
+                0x00001f3c                __aeabi_fcmplt
+ .text.__aeabi_fcmpgt
+                0x00001f7e       0x3e c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
+                0x00001f7e                __aeabi_fcmpgt
  .text.__aeabi_llong_lmul
-                0x00001db4       0x2e c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(llong.o)
-                0x00001db4                __aeabi_lmul
+                0x00001fbc       0x2e c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(llong.o)
+                0x00001fbc                __aeabi_lmul
  .text.__aeabi_memset_lowlevel
-                0x00001de2       0x2a c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
-                0x00001de2                __aeabi_lowlevel_memset
+                0x00001fea       0x2a c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
+                0x00001fea                __aeabi_lowlevel_memset
  .text.__sys_close
-                0x00001e0c        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_close.o)
-                0x00001e0c                __sys_close
+                0x00002014        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_close.o)
+                0x00002014                __sys_close
  .text.__sys_flen
-                0x00001e18        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_flen.o)
-                0x00001e18                __sys_flen
+                0x00002020        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_flen.o)
+                0x00002020                __sys_flen
  .text.__sys_istty
-                0x00001e24        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_istty.o)
-                0x00001e24                __sys_istty
+                0x0000202c        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_istty.o)
+                0x0000202c                __sys_istty
  .text.__sys_remove
-                0x00001e30        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_remove.o)
-                0x00001e30                __sys_remove
+                0x00002038        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_remove.o)
+                0x00002038                __sys_remove
  .text.__sys_seek
-                0x00001e3c        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_seek.o)
-                0x00001e3c                __sys_seek
+                0x00002044        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_seek.o)
+                0x00002044                __sys_seek
  .text.__sys_tmpnam
-                0x00001e48        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_tmpnam.o)
-                0x00001e48                __sys_tmpnam
+                0x00002050        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_tmpnam.o)
+                0x00002050                __sys_tmpnam
  .text.__sys_write
-                0x00001e54        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_write.o)
-                0x00001e54                __sys_write
+                0x0000205c        0xc c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_write.o)
+                0x0000205c                __sys_write
  *(.rodata .rodata.* .constdata .constdata.*)
  .rodata.decodeMessage
-                0x00001e60       0x1c ./src/protocol.o
+                0x00002068       0x1c ./src/protocol.o
+ .rodata.positionLowLimit
+                0x00002084       0x24 ./src/robotCommand.o
+                0x00002084                positionLowLimit
+ .rodata.positionHighLimit
+                0x000020a8       0x24 ./src/robotCommand.o
+                0x000020a8                positionHighLimit
  .rodata._initio.str1.1
-                0x00001e7c        0x4 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(initio.o)
+                0x000020cc        0x4 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(initio.o)
  .rodata.__num_Ciob_streams
-                0x00001e80        0x4 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__ciob.o)
-                0x00001e80                __num_Ciob_streams
-                0x00001e84                . = ALIGN (0x4)
+                0x000020d0        0x4 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__ciob.o)
+                0x000020d0                __num_Ciob_streams
+                0x000020d4                . = ALIGN (0x4)
 
-.glue_7         0x00001e84        0x0
- .glue_7        0x00001e84        0x0 linker stubs
+.glue_7         0x000020d4        0x0
+ .glue_7        0x000020d4        0x0 linker stubs
 
-.glue_7t        0x00001e84        0x0
- .glue_7t       0x00001e84        0x0 linker stubs
+.glue_7t        0x000020d4        0x0
+ .glue_7t       0x000020d4        0x0 linker stubs
 
-.vfp11_veneer   0x00001e84        0x0
- .vfp11_veneer  0x00001e84        0x0 linker stubs
+.vfp11_veneer   0x000020d4        0x0
+ .vfp11_veneer  0x000020d4        0x0 linker stubs
 
-.v4_bx          0x00001e84        0x0
- .v4_bx         0x00001e84        0x0 linker stubs
+.v4_bx          0x000020d4        0x0
+ .v4_bx         0x000020d4        0x0 linker stubs
 
-.iplt           0x00001e84        0x0
- .iplt          0x00001e84        0x0 ./src/CB_RX0.o
+.iplt           0x000020d4        0x0
+ .iplt          0x000020d4        0x0 ./src/CB_RX0.o
 
-.rel.dyn        0x00001e84        0x0
- .rel.iplt      0x00001e84        0x0 ./src/CB_RX0.o
+.rel.dyn        0x000020d4        0x0
+ .rel.iplt      0x000020d4        0x0 ./src/CB_RX0.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM.exidx      0x00001e84        0x0
-                0x00001e84                __exidx_start = .
+.ARM.exidx      0x000020d4        0x0
+                0x000020d4                __exidx_start = .
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00001e84                __exidx_end = .
-                0x00001e84                _etext = .
+                0x000020d4                __exidx_end = .
+                0x000020d4                _etext = .
 
 .uninit_RESERVED
                 0x10000000        0x0
@@ -1041,7 +1037,7 @@ END GROUP
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _end_uninit_RESERVED = .
 
-.data           0x10000000        0x4 load address 0x00001e84
+.data           0x10000000        0x4 load address 0x000020d4
  FILL mask 0xff
                 0x10000000                _data = .
                 [!provide]                PROVIDE (__start_data_RAM = .)
@@ -1061,7 +1057,7 @@ END GROUP
                 [!provide]                PROVIDE (__end_data_RAM = .)
                 [!provide]                PROVIDE (__end_data_RamLoc4 = .)
 
-.igot.plt       0x10000004        0x0 load address 0x00001e88
+.igot.plt       0x10000004        0x0 load address 0x000020d8
  .igot.plt      0x10000004        0x0 ./src/CB_RX0.o
 
 .bss            0x10000004      0x378
@@ -1134,44 +1130,46 @@ END GROUP
                 0x10001000                PROVIDE (_vStackTop = DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc4 - 0x0))
                 0xefffeb13                PROVIDE (__valid_user_code_checksum = (0x0 - (((_vStackTop + (ResetISR + 0x1)) + (DEFINED (NMI_Handler)?NMI_Handler:M0_NMI_Handler + 0x1)) + (DEFINED (HardFault_Handler)?HardFault_Handler:M0_HardFault_Handler + 0x1))))
                 0x00000000                _image_start = LOADADDR (.text)
-                0x00001e88                _image_end = (LOADADDR (.data) + SIZEOF (.data))
-                0x00001e88                _image_size = (_image_end - _image_start)
+                0x000020d8                _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x000020d8                _image_size = (_image_end - _image_start)
 OUTPUT(TP_HEXAPODE.axf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000     0x4cdf
+.debug_info     0x00000000     0x4d82
  .debug_info    0x00000000      0x184 ./src/CB_RX0.o
  .debug_info    0x00000184      0x1de ./src/CB_TX0.o
  .debug_info    0x00000362      0xa32 ./src/GPIO_hexapode.o
  .debug_info    0x00000d94      0x232 ./src/MCUXpresso_cr_startup.o
  .debug_info    0x00000fc6       0x40 ./src/MCUXpresso_crp.o
  .debug_info    0x00001006      0x897 ./src/MRT_hexapode.o
- .debug_info    0x0000189d      0x8a8 ./src/UART_hexapode.o
- .debug_info    0x00002145      0xbf8 ./src/lib_ENS_II1_lcd.o
- .debug_info    0x00002d3d      0xcea ./src/main.o
- .debug_info    0x00003a27      0x2cb ./src/protocol.o
- .debug_info    0x00003cf2      0x10d ./src/robotCommand.o
- .debug_info    0x00003dff      0x8a1 ./src/system.o
- .debug_info    0x000046a0      0x39c C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_info    0x00004a3c      0x2a3 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_info    0x0000189d      0x878 ./src/UART_hexapode.o
+ .debug_info    0x00002115      0xbf8 ./src/lib_ENS_II1_lcd.o
+ .debug_info    0x00002d0d      0xcea ./src/main.o
+ .debug_info    0x000039f7      0x2cb ./src/protocol.o
+ .debug_info    0x00003cc2      0x14b ./src/robotCommand.o
+ .debug_info    0x00003e0d      0x8a1 ./src/system.o
+ .debug_info    0x000046ae       0xf1 ./src/toolbox.o
+ .debug_info    0x0000479f      0x340 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_info    0x00004adf      0x2a3 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
 
-.debug_abbrev   0x00000000     0x13a4
+.debug_abbrev   0x00000000     0x1427
  .debug_abbrev  0x00000000       0xef ./src/CB_RX0.o
  .debug_abbrev  0x000000ef      0x125 ./src/CB_TX0.o
  .debug_abbrev  0x00000214      0x192 ./src/GPIO_hexapode.o
  .debug_abbrev  0x000003a6      0x122 ./src/MCUXpresso_cr_startup.o
  .debug_abbrev  0x000004c8       0x38 ./src/MCUXpresso_crp.o
  .debug_abbrev  0x00000500      0x1f1 ./src/MRT_hexapode.o
- .debug_abbrev  0x000006f1      0x209 ./src/UART_hexapode.o
- .debug_abbrev  0x000008fa      0x217 ./src/lib_ENS_II1_lcd.o
- .debug_abbrev  0x00000b11      0x232 ./src/main.o
- .debug_abbrev  0x00000d43      0x14d ./src/protocol.o
- .debug_abbrev  0x00000e90       0xb3 ./src/robotCommand.o
- .debug_abbrev  0x00000f43      0x1ae ./src/system.o
- .debug_abbrev  0x000010f1      0x171 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_abbrev  0x00001262      0x142 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_abbrev  0x000006f1      0x1e2 ./src/UART_hexapode.o
+ .debug_abbrev  0x000008d3      0x217 ./src/lib_ENS_II1_lcd.o
+ .debug_abbrev  0x00000aea      0x232 ./src/main.o
+ .debug_abbrev  0x00000d1c      0x14d ./src/protocol.o
+ .debug_abbrev  0x00000e69       0xd6 ./src/robotCommand.o
+ .debug_abbrev  0x00000f3f      0x1ae ./src/system.o
+ .debug_abbrev  0x000010ed       0x98 ./src/toolbox.o
+ .debug_abbrev  0x00001185      0x160 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_abbrev  0x000012e5      0x142 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
 
-.debug_aranges  0x00000000      0x320
+.debug_aranges  0x00000000      0x338
  .debug_aranges
                 0x00000000       0x40 ./src/CB_RX0.o
  .debug_aranges
@@ -1185,38 +1183,41 @@ LOAD linker stubs
  .debug_aranges
                 0x00000120       0x30 ./src/MRT_hexapode.o
  .debug_aranges
-                0x00000150       0x48 ./src/UART_hexapode.o
+                0x00000150       0x40 ./src/UART_hexapode.o
  .debug_aranges
-                0x00000198       0x48 ./src/lib_ENS_II1_lcd.o
+                0x00000190       0x48 ./src/lib_ENS_II1_lcd.o
  .debug_aranges
-                0x000001e0       0x30 ./src/main.o
+                0x000001d8       0x30 ./src/main.o
  .debug_aranges
-                0x00000210       0x50 ./src/protocol.o
+                0x00000208       0x50 ./src/protocol.o
  .debug_aranges
-                0x00000260       0x28 ./src/robotCommand.o
+                0x00000258       0x28 ./src/robotCommand.o
  .debug_aranges
-                0x00000288       0x28 ./src/system.o
+                0x00000280       0x28 ./src/system.o
  .debug_aranges
-                0x000002b0       0x40 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+                0x000002a8       0x28 ./src/toolbox.o
  .debug_aranges
-                0x000002f0       0x30 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+                0x000002d0       0x38 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_aranges
+                0x00000308       0x30 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
 
-.debug_ranges   0x00000000      0x238
+.debug_ranges   0x00000000      0x240
  .debug_ranges  0x00000000       0x30 ./src/CB_RX0.o
  .debug_ranges  0x00000030       0x38 ./src/CB_TX0.o
  .debug_ranges  0x00000068       0x10 ./src/GPIO_hexapode.o
  .debug_ranges  0x00000078       0x50 ./src/MCUXpresso_cr_startup.o
  .debug_ranges  0x000000c8       0x20 ./src/MRT_hexapode.o
- .debug_ranges  0x000000e8       0x38 ./src/UART_hexapode.o
- .debug_ranges  0x00000120       0x38 ./src/lib_ENS_II1_lcd.o
- .debug_ranges  0x00000158       0x20 ./src/main.o
- .debug_ranges  0x00000178       0x40 ./src/protocol.o
- .debug_ranges  0x000001b8       0x18 ./src/robotCommand.o
- .debug_ranges  0x000001d0       0x18 ./src/system.o
- .debug_ranges  0x000001e8       0x30 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_ranges  0x00000218       0x20 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_ranges  0x000000e8       0x30 ./src/UART_hexapode.o
+ .debug_ranges  0x00000118       0x38 ./src/lib_ENS_II1_lcd.o
+ .debug_ranges  0x00000150       0x20 ./src/main.o
+ .debug_ranges  0x00000170       0x40 ./src/protocol.o
+ .debug_ranges  0x000001b0       0x18 ./src/robotCommand.o
+ .debug_ranges  0x000001c8       0x18 ./src/system.o
+ .debug_ranges  0x000001e0       0x18 ./src/toolbox.o
+ .debug_ranges  0x000001f8       0x28 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_ranges  0x00000220       0x20 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
 
-.debug_macro    0x00000000     0x3b87
+.debug_macro    0x00000000     0x3bbb
  .debug_macro   0x00000000       0x4c ./src/CB_RX0.o
  .debug_macro   0x0000004c      0xa6c ./src/CB_RX0.o
  .debug_macro   0x00000ab8       0x10 ./src/CB_RX0.o
@@ -1253,63 +1254,67 @@ LOAD linker stubs
  .debug_macro   0x0000280a       0xe8 ./src/lib_ENS_II1_lcd.o
  .debug_macro   0x000028f2       0x1c ./src/lib_ENS_II1_lcd.o
  .debug_macro   0x0000290e      0x122 ./src/main.o
- .debug_macro   0x00002a30      0x1ae ./src/main.o
- .debug_macro   0x00002bde       0xf4 ./src/main.o
- .debug_macro   0x00002cd2       0x55 ./src/protocol.o
- .debug_macro   0x00002d27       0x34 ./src/protocol.o
- .debug_macro   0x00002d5b       0x5d ./src/robotCommand.o
- .debug_macro   0x00002db8       0xee ./src/robotCommand.o
- .debug_macro   0x00002ea6       0xfd ./src/system.o
- .debug_macro   0x00002fa3       0x5e ./src/system.o
- .debug_macro   0x00003001       0x9b C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_macro   0x0000309c      0xa66 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_macro   0x00003b02       0x85 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_macro   0x00002a30      0x196 ./src/main.o
+ .debug_macro   0x00002bc6       0xf4 ./src/main.o
+ .debug_macro   0x00002cba       0x55 ./src/protocol.o
+ .debug_macro   0x00002d0f       0x34 ./src/protocol.o
+ .debug_macro   0x00002d43       0x5d ./src/robotCommand.o
+ .debug_macro   0x00002da0       0xee ./src/robotCommand.o
+ .debug_macro   0x00002e8e       0xfd ./src/system.o
+ .debug_macro   0x00002f8b       0x5e ./src/system.o
+ .debug_macro   0x00002fe9       0x4c ./src/toolbox.o
+ .debug_macro   0x00003035       0x9b C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_macro   0x000030d0      0xa66 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_macro   0x00003b36       0x85 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
 
-.debug_line     0x00000000     0x31c7
- .debug_line    0x00000000      0x28a ./src/CB_RX0.o
- .debug_line    0x0000028a      0x300 ./src/CB_TX0.o
- .debug_line    0x0000058a      0x32d ./src/GPIO_hexapode.o
- .debug_line    0x000008b7      0x13a ./src/MCUXpresso_cr_startup.o
- .debug_line    0x000009f1       0xbc ./src/MCUXpresso_crp.o
- .debug_line    0x00000aad      0x3c1 ./src/MRT_hexapode.o
- .debug_line    0x00000e6e      0x4bf ./src/UART_hexapode.o
- .debug_line    0x0000132d      0x608 ./src/lib_ENS_II1_lcd.o
- .debug_line    0x00001935      0x55f ./src/main.o
- .debug_line    0x00001e94      0x3a3 ./src/protocol.o
- .debug_line    0x00002237      0x246 ./src/robotCommand.o
- .debug_line    0x0000247d      0x4ba ./src/system.o
- .debug_line    0x00002937      0x563 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_line    0x00002e9a      0x32d C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+.debug_line     0x00000000     0x3158
+ .debug_line    0x00000000      0x27d ./src/CB_RX0.o
+ .debug_line    0x0000027d      0x2e4 ./src/CB_TX0.o
+ .debug_line    0x00000561      0x306 ./src/GPIO_hexapode.o
+ .debug_line    0x00000867      0x13a ./src/MCUXpresso_cr_startup.o
+ .debug_line    0x000009a1       0xbc ./src/MCUXpresso_crp.o
+ .debug_line    0x00000a5d      0x39a ./src/MRT_hexapode.o
+ .debug_line    0x00000df7      0x45c ./src/UART_hexapode.o
+ .debug_line    0x00001253      0x5d4 ./src/lib_ENS_II1_lcd.o
+ .debug_line    0x00001827      0x4e9 ./src/main.o
+ .debug_line    0x00001d10      0x396 ./src/protocol.o
+ .debug_line    0x000020a6      0x252 ./src/robotCommand.o
+ .debug_line    0x000022f8      0x486 ./src/system.o
+ .debug_line    0x0000277e      0x203 ./src/toolbox.o
+ .debug_line    0x00002981      0x4c4 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_line    0x00002e45      0x313 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
 
-.debug_str      0x00000000     0x98d5
- .debug_str     0x00000000     0x439d ./src/CB_RX0.o
-                               0x4416 (size before relaxing)
- .debug_str     0x0000439d      0x1fe ./src/CB_TX0.o
-                               0x4569 (size before relaxing)
- .debug_str     0x0000459b     0x2197 ./src/GPIO_hexapode.o
-                               0x650f (size before relaxing)
- .debug_str     0x00006732      0x17b ./src/MCUXpresso_cr_startup.o
-                               0x2e14 (size before relaxing)
- .debug_str     0x000068ad       0xf4 ./src/MCUXpresso_crp.o
-                               0x2d87 (size before relaxing)
- .debug_str     0x000069a1      0xb32 ./src/MRT_hexapode.o
-                               0x6f19 (size before relaxing)
- .debug_str     0x000074d3      0xe26 ./src/UART_hexapode.o
-                               0x7388 (size before relaxing)
- .debug_str     0x000082f9      0x831 ./src/lib_ENS_II1_lcd.o
-                               0x74c1 (size before relaxing)
- .debug_str     0x00008b2a      0x7c8 ./src/main.o
-                               0x7c9b (size before relaxing)
- .debug_str     0x000092f2      0x11f ./src/protocol.o
-                               0x4531 (size before relaxing)
- .debug_str     0x00009411       0x43 ./src/robotCommand.o
-                               0x479c (size before relaxing)
- .debug_str     0x00009454      0x31d ./src/system.o
-                               0x7301 (size before relaxing)
- .debug_str     0x00009771      0x106 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
-                               0x66b1 (size before relaxing)
- .debug_str     0x00009877       0x5e C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
-                               0x6254 (size before relaxing)
+.debug_str      0x00000000     0x98aa
+ .debug_str     0x00000000     0x4390 ./src/CB_RX0.o
+                               0x4409 (size before relaxing)
+ .debug_str     0x00004390      0x1fe ./src/CB_TX0.o
+                               0x455c (size before relaxing)
+ .debug_str     0x0000458e     0x2197 ./src/GPIO_hexapode.o
+                               0x6502 (size before relaxing)
+ .debug_str     0x00006725      0x17b ./src/MCUXpresso_cr_startup.o
+                               0x2e07 (size before relaxing)
+ .debug_str     0x000068a0       0xf4 ./src/MCUXpresso_crp.o
+                               0x2d7a (size before relaxing)
+ .debug_str     0x00006994      0xb32 ./src/MRT_hexapode.o
+                               0x6f0c (size before relaxing)
+ .debug_str     0x000074c6      0xdfe ./src/UART_hexapode.o
+                               0x7353 (size before relaxing)
+ .debug_str     0x000082c4      0x831 ./src/lib_ENS_II1_lcd.o
+                               0x74b4 (size before relaxing)
+ .debug_str     0x00008af5      0x7aa ./src/main.o
+                               0x7c70 (size before relaxing)
+ .debug_str     0x0000929f      0x118 ./src/protocol.o
+                               0x451d (size before relaxing)
+ .debug_str     0x000093b7       0x66 ./src/robotCommand.o
+                               0x47b8 (size before relaxing)
+ .debug_str     0x0000941d      0x31d ./src/system.o
+                               0x72f4 (size before relaxing)
+ .debug_str     0x0000973a       0x27 ./src/toolbox.o
+                               0x43a7 (size before relaxing)
+ .debug_str     0x00009761       0xeb C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+                               0x668d (size before relaxing)
+ .debug_str     0x0000984c       0x5e C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+                               0x6247 (size before relaxing)
 
 .comment        0x00000000       0x4d
  .comment       0x00000000       0x4d ./src/CB_RX0.o
@@ -1325,8 +1330,9 @@ LOAD linker stubs
  .comment       0x0000004d       0x4e ./src/protocol.o
  .comment       0x0000004d       0x4e ./src/robotCommand.o
  .comment       0x0000004d       0x4e ./src/system.o
- .comment       0x0000004d       0x4e C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .comment       0x0000004d       0x4e C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .comment       0x0000004d       0x4e ./src/toolbox.o
+ .comment       0x0000004d       0x4e C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .comment       0x0000004d       0x4e C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
  .comment       0x0000004d       0x4e c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(_cr__main.o)
  .comment       0x0000004d       0x4e c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(initio.o)
  .comment       0x0000004d       0x4e c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(setvbuf.o)
@@ -1375,79 +1381,82 @@ LOAD linker stubs
  .ARM.attributes
                 0x000001e9       0x2c ./src/system.o
  .ARM.attributes
-                0x00000215       0x2c C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+                0x00000215       0x2c ./src/toolbox.o
  .ARM.attributes
-                0x00000241       0x2c C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+                0x00000241       0x2c C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
  .ARM.attributes
-                0x0000026d       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(_cr__main.o)
+                0x0000026d       0x2c C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)
  .ARM.attributes
-                0x00000299       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(initio.o)
+                0x00000299       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(_cr__main.o)
  .ARM.attributes
-                0x000002c5       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(setvbuf.o)
+                0x000002c5       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(initio.o)
  .ARM.attributes
-                0x000002f1       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_fdopen.o)
+                0x000002f1       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(setvbuf.o)
  .ARM.attributes
-                0x0000031d       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(fclose.o)
+                0x0000031d       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_fdopen.o)
  .ARM.attributes
-                0x00000349       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(fflush.o)
+                0x00000349       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(fclose.o)
  .ARM.attributes
-                0x00000375       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(fseek.o)
+                0x00000375       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(fflush.o)
  .ARM.attributes
-                0x000003a1       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(ftell.o)
+                0x000003a1       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(fseek.o)
  .ARM.attributes
-                0x000003cd       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(remove.o)
+                0x000003cd       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(ftell.o)
  .ARM.attributes
-                0x000003f9       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
+                0x000003f9       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(remove.o)
  .ARM.attributes
-                0x00000425       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
+                0x00000425       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(strlen.o)
  .ARM.attributes
-                0x00000451       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_do_fflush.o)
+                0x00000451       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(memset.o)
  .ARM.attributes
-                0x0000047d       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_fflush.o)
+                0x0000047d       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_do_fflush.o)
  .ARM.attributes
-                0x000004a9       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_writebuf.o)
+                0x000004a9       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_fflush.o)
  .ARM.attributes
-                0x000004d5       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(alloc.o)
+                0x000004d5       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_writebuf.o)
  .ARM.attributes
-                0x00000501       0x31 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(errno.o)
+                0x00000501       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(alloc.o)
  .ARM.attributes
-                0x00000532       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_deferredlazyseek.o)
+                0x0000052d       0x31 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(errno.o)
  .ARM.attributes
-                0x0000055e       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
+                0x0000055e       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(_deferredlazyseek.o)
  .ARM.attributes
-                0x0000058a       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
+                0x0000058a       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(double.o)
  .ARM.attributes
-                0x000005b6       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(llong.o)
+                0x000005b6       0x2c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(float.o)
  .ARM.attributes
-                0x000005d2       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
+                0x000005e2       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(llong.o)
  .ARM.attributes
-                0x000005ee       0x31 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__ciob.o)
+                0x000005fe       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libcr_eabihelpers.a(memcpy.o)
  .ARM.attributes
-                0x0000061f       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_close.o)
+                0x0000061a       0x31 c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__ciob.o)
  .ARM.attributes
-                0x0000063b       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_flen.o)
+                0x0000064b       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_close.o)
  .ARM.attributes
-                0x00000657       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_istty.o)
+                0x00000667       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_flen.o)
  .ARM.attributes
-                0x00000673       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_remove.o)
+                0x00000683       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_istty.o)
  .ARM.attributes
-                0x0000068f       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_seek.o)
+                0x0000069f       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_remove.o)
  .ARM.attributes
-                0x000006ab       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_tmpnam.o)
+                0x000006bb       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_seek.o)
  .ARM.attributes
-                0x000006c7       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_write.o)
+                0x000006d7       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_tmpnam.o)
+ .ARM.attributes
+                0x000006f3       0x1c c:/nxp/mcuxpressoide_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.4.0.202103011116/tools/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost.a(__sys_write.o)
 
-.debug_frame    0x00000000      0x7d0
+.debug_frame    0x00000000      0x7e0
  .debug_frame   0x00000000       0xac ./src/CB_RX0.o
  .debug_frame   0x000000ac       0xcc ./src/CB_TX0.o
  .debug_frame   0x00000178       0x2c ./src/GPIO_hexapode.o
  .debug_frame   0x000001a4      0x118 ./src/MCUXpresso_cr_startup.o
  .debug_frame   0x000002bc       0x6c ./src/MRT_hexapode.o
- .debug_frame   0x00000328       0xc4 ./src/UART_hexapode.o
- .debug_frame   0x000003ec       0xcc ./src/lib_ENS_II1_lcd.o
- .debug_frame   0x000004b8       0x6c ./src/main.o
- .debug_frame   0x00000524       0xec ./src/protocol.o
- .debug_frame   0x00000610       0x50 ./src/robotCommand.o
- .debug_frame   0x00000660       0x50 ./src/system.o
- .debug_frame   0x000006b0       0xb0 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
- .debug_frame   0x00000760       0x70 C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\TP\TP5\peripherals_lib\flash\libperipherals_lib.a(swm.o)
+ .debug_frame   0x00000328       0xa4 ./src/UART_hexapode.o
+ .debug_frame   0x000003cc       0xcc ./src/lib_ENS_II1_lcd.o
+ .debug_frame   0x00000498       0x6c ./src/main.o
+ .debug_frame   0x00000504       0xec ./src/protocol.o
+ .debug_frame   0x000005f0       0x50 ./src/robotCommand.o
+ .debug_frame   0x00000640       0x50 ./src/system.o
+ .debug_frame   0x00000690       0x50 ./src/toolbox.o
+ .debug_frame   0x000006e0       0x90 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(i2c.o)
+ .debug_frame   0x00000770       0x70 C:\Users\Pierre-Alexandre\Desktop\Etudes\441 - Informatique industrielle\Code\peripherals_lib\flash\libperipherals_lib.a(swm.o)

@@ -20,7 +20,7 @@
 
 #define RECEIVED_BUFFER_SIZE 128
 
-void encodeMessageAndSendMessage(uint8_t nMotor, uint8_t length, uint8_t adress, uint8_t *payload);
+void encodeAndSendMessage(uint8_t nMotor, uint8_t length, uint8_t adress, uint8_t *payload);
 void decodeMessage(uint8_t c);
 void processDecodedMessage(uint8_t motorID, uint8_t length, uint8_t error, uint8_t *payload);
 uint8_t calculateChecksum(uint8_t motorID, uint8_t length, uint8_t instruction, const uint8_t *payload);

@@ -20,6 +20,24 @@
 #define ADDRESS_GOAL_POSITION 30
 
 //Angle limits
+//M1: 	[124.22, 228.52]
+//M2: 	[60.06, 220.90]
+//M3: 	[73.24, 248.44]
+//M4: 	[127.15, 170.21]
+//M5: 	[60.06, 220.90]
+//M6: 	[73.24, 248.44]
+//M7: 	[88.48, 177.54]
+//M8: 	[60.06, 220.90]
+//M9: 	[73.24, 248.44]
+//M10: 	[86.43, 171.39]
+//M11: 	[60.06, 220.90]
+//M12: 	[73.24, 248.44]
+//M13: 	[127.15, 170.21]
+//M14: 	[60.06, 220.90]
+//M15: 	[73.24, 248.44]
+//M16: 	[124.51, 210.35]
+//M17: 	[60.06, 220.90]
+//M18: 	[73.24, 248.44]
 #define MOTOR1_LIMIT_L		424
 #define MOTOR1_LIMIT_H		780
 #define MOTOR2_LIMIT_L		205
@@ -50,8 +68,8 @@
 #define MOTOR14_LIMIT_H		754
 #define MOTOR15_LIMIT_L		250
 #define MOTOR15_LIMIT_H		848
-#define MOTOR16_LIMIT_L
-#define MOTOR16_LIMIT_H
+#define MOTOR16_LIMIT_L		425
+#define MOTOR16_LIMIT_H		718
 #define MOTOR17_LIMIT_L		205
 #define MOTOR17_LIMIT_H		754
 #define MOTOR18_LIMIT_L		250

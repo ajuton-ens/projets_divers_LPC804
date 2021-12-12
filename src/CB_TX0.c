@@ -20,12 +20,11 @@ void SendMessage(uint8_t* message, uint16_t length)
 {
 	uint8_t i = 0;
 
-    if (CB_TX0_RemainingSize() > length && isAnswerReceived())
+    if (CB_TX0_RemainingSize() > length)
     {
         //On peut écrire le message
         for (i = 0 ; i < length ; i++)
             CB_TX0_Add(message[i]);
-        setAnswerWaiting();
         if (!isTransmitting)
         {
         	isTransmitting = 1;

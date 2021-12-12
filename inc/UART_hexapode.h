@@ -19,7 +19,6 @@
 #define UART0_TX_PIN 16
 
 void init_UART0(uint32_t baudrate);
-uint8_t UART0_checkCharacterReception(uint8_t *character);
 void UART0_sendOne();
 void UART0_beginTransmission();
 void UART0_endTransmission();

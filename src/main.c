@@ -50,22 +50,44 @@ int main()
 		if (rEdge1 == 1)
 		{
 			LED1 = 1;
-			while(!isAnswerReceived());
 			setMotorPosition(3, (80));
-			while(!isAnswerReceived());
 			setMotorPosition(6, (80));
-			while(!isAnswerReceived());
 			setMotorPosition(9, (80));
+			setMotorPosition(12, (80));
+			setMotorPosition(15, (80));
+			setMotorPosition(18, (80));
 		}
 		else if (rEdge1 == 2)
 		{
 			LED1 = 0;
-			while(!isAnswerReceived());
 			setMotorPosition(3, (230));
-			while(!isAnswerReceived());
 			setMotorPosition(6, (230));
-			while(!isAnswerReceived());
 			setMotorPosition(9, (230));
+			setMotorPosition(12, (230));
+			setMotorPosition(15, (230));
+			setMotorPosition(18, (230));
+		}
+
+		if (rEdge2 == 1)
+		{
+			LED2 = 1;
+			setMotorPosition(2, (100));
+			setMotorPosition(5, (100));
+			setMotorPosition(8, (100));
+			setMotorPosition(11, (100));
+			setMotorPosition(14, (100));
+			setMotorPosition(17, (100));
+		}
+		else if (rEdge2 == 2)
+		{
+
+			LED2 = 0;
+			setMotorPosition(2, (120));
+			setMotorPosition(5, (120));
+			setMotorPosition(8, (120));
+			setMotorPosition(11, (120));
+			setMotorPosition(14, (120));
+			setMotorPosition(17, (120));
 		}
 	}
 }
