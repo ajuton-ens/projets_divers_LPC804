@@ -6,7 +6,7 @@
  * Generated linker script file for LPC804
  * Created from memory.ldt by FMCreateLinkMemory
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v11.4.1 [Build 6260] [2021-09-15] on 14 déc. 2021 à 00:07:09
+ * MCUXpresso IDE v11.4.1 [Build 6260] [2021-09-15] on 14 déc. 2021 à 00:17:44
  */
 
 MEMORY

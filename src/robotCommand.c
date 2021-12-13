@@ -203,11 +203,11 @@ void marche_sinus(float vitesse, float amplitude, short direction, short rotatio
 		//teta2
 		xd=sqrt(pow((ydd[n_patte]-L1*sin(gamma[n_patte])),2)+pow((xdd[n_patte]-L1*cos(gamma[n_patte])),2))-l1;
 		yd=zdd[n_patte];
-		teta2=180.0/PI*(-atan2(-yd,xd)+acos((pow(l3,2)-pow(xd,2)-pow(yd,2)-pow(l2,2))/(-2*l2*sqrt(pow(xd,2)+pow(yd,2)))));
+		teta2=180.0/PI*(-atan2(-yd,xd)+acos(((l3*l3)-(xd*xd)-(yd*yd)-(l2*l2))/(-2*l2*sqrt((xd*xd)+(yd*yd)))));
 		servo[n_patte][1]=(150.0+teta2);
 
 		//teta3
-		teta3=180.0/PI*(PI/2-acos((-pow(l3,2)+pow(xd,2)+pow(yd,2)-pow(l2,2))/(-2*l2*l3)));
+		teta3=180.0/PI*(PI/2-acos((-(l3*l3)+(xd*xd)+(yd*yd)-(l2*l2))/(-2*l2*l3)));
 		servo[n_patte][2]=(teta3+150.0);
 	}
 
