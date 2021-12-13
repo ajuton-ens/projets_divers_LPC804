@@ -102,7 +102,7 @@ void init_peripherals()
 
 	init_GPIO();
 	init_UART0(115200);
-	init_MRT0(1000);
+	init_MRT0(1.0 / T_ECH_MARCHE_ROBOT);
 }
 
 uint8_t telerupteur(uint8_t btnPin, uint8_t currentBtnState, uint8_t prevBtnState)

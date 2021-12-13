@@ -9,7 +9,7 @@
 #include "UART_hexapode.h"
 #include "protocol.h"
 
-#define CBTX0_BUFFER_SIZE 128
+#define CBTX0_BUFFER_SIZE 256
 
 uint16_t cbTx0Head;
 uint16_t cbTx0Tail;

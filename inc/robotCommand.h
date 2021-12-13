@@ -75,8 +75,31 @@
 #define MOTOR18_LIMIT_L		250
 #define MOTOR18_LIMIT_H		848
 
+//geometrie de l'hexapode
+#define XDD0 141.42
+#define YDD0 141.42
+#define XDD1 200.0
+#define YDD1 0.0
+#define XDD2 141.42
+#define YDD2 -141.42
+#define XDD3 -141.42
+#define YDD3 141.42
+#define XDD4 -200.0
+#define YDD4 0.0
+#define XDD5 -141.42
+#define YDD5 -141.42
+#define ZDD -50.0
+
+#define L1 100.0
+#define l1 55.0
+#define l2 65.0
+#define l3 70.0
+
+#define T_ECH_MARCHE_ROBOT 0.1
+
 void setMotorPosition(uint8_t motorID, float position);
 void initMotorLimits();
+void marche_sinus(float vitesse, float amplitude, short direction, short rotation);
 
 
 #endif /* INC_ROBOTCOMMAND_H_ */

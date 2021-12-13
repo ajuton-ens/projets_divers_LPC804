@@ -14,6 +14,7 @@
 #include "math.h"
 #include "UART_hexapode.h"
 #include "CB_TX0.h"
+#include "robotCommand.h"
 
 void init_MRT0(float frequency)
 {
@@ -33,6 +34,7 @@ void MRT_IRQHandler()
 	//Vérifier si on a des charactères à traiter
 	if (CB_RX0_IsDataAvailable())
 		decodeMessage(CB_RX0_Get());
+	marche_sinus(3.14, 30, 0, 0);
 
 }
 
