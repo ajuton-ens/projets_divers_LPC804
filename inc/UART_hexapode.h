@@ -17,6 +17,8 @@
 
 #define UART0_RX_PIN 11
 #define UART0_TX_PIN 16
+#define UART1_RX_PIN 20
+#define UART1_TX_PIN 18
 
 void init_UART0(uint32_t baudrate);
 void UART0_sendOne();

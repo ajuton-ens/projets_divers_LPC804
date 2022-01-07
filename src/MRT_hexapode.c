@@ -34,7 +34,7 @@ void MRT_IRQHandler()
 	//Vérifier si on a des charactères à traiter
 	if (CB_RX0_IsDataAvailable())
 		decodeMessage(CB_RX0_Get());
-	marche_sinus(10, 30, 0, 0);
+	marche_sinus();
 
 }
 

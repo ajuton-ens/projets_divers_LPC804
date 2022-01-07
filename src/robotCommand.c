@@ -67,7 +67,28 @@ void initMotorLimits()
 	//TODO (or not todo...)
 }
 
-void marche_sinus(float vitesse, float amplitude, short direction, short rotation)
+float vitesse = 0;
+float amplitude = 0;
+short direction = 0;
+short rotation = 0;
+
+
+void robotSetVitesse(float value)
+{
+	vitesse = value;
+}
+
+void robotSetAmplitude(float value)
+{
+	amplitude = value;
+}
+
+void robotSetDirection(short value)
+{
+	direction = value;
+}
+
+void marche_sinus()
 {
 	unsigned char n_patte;
 	float servo[6][3];

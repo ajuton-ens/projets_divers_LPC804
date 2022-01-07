@@ -13,6 +13,7 @@
 #include "uart.h"
 #include "CB_RX0.h"
 #include "CB_TX0.h"
+#include "robotCommand.h"
 
 void init_UART0(uint32_t baudrate)
 {
@@ -32,12 +33,73 @@ void init_UART0(uint32_t baudrate)
 //	ConfigSWM(U0_RXD, DBGRXPIN);		//RX -> Pin_RX
 }
 
+void init_UART1(uint32_t baudrate)
+{
+	LPC_SYSCON->SYSAHBCLKCTRL0 |= UART1;
+	LPC_SYSCON->UART1CLKSEL &= ~0b111; //UART Clk <- Free Run Oscillator
+
+	LPC_USART1->CFG = 1 ;							//UART Enable, no parity, 1 stop bit, asynchronous, Normal mode,
+	LPC_USART1->CFG |= (1 << 2);					//8 bits
+	LPC_USART1->BRG = (uint32_t)BRGVAL(baudrate);	// baud
+	LPC_USART1->INTENSET |= RXRDY;
+
+	NVIC->ISER[0] |= (1 << (uint32_t)UART1_IRQn);
+	NVIC->IP[1] &= ~(0b11 << 6);
+
+	ConfigSWM(U1_TXD, UART1_TX_PIN);		//TX -> Pin_TX
+	ConfigSWM(U1_RXD, UART1_RX_PIN);		//RX -> Pin_RX
+//	ConfigSWM(U0_TXD, DBGTXPIN);		//TX -> Pin_TX
+//	ConfigSWM(U0_RXD, DBGRXPIN);		//RX -> Pin_RX
+}
+
+
+
+
 void UART0_IRQHandler()
 {
 	if (LPC_USART0->INTSTAT & RXRDY)
 		CB_RX0_Add(LPC_USART0->RXDAT);
 	else if (LPC_USART0->INTSTAT & TXIDLE)
 		UART0_sendOne();
+}
+
+void UART1_IRQHandler()
+{
+	if (LPC_USART1->INTSTAT & RXRDY)
+	{
+		uint8_t receivedChar = LPC_USART1->RXDAT;
+		if (receivedChar == 'Z')
+		{
+			robotSetDirection(0);
+			robotSetAmplitude(30);
+			robotSetVitesse(3.14);
+		}
+		else if (receivedChar == 'Q')
+		{
+			robotSetDirection(90);
+			robotSetAmplitude(30);
+			robotSetVitesse(3.14);
+		}
+		else if (receivedChar == 'S')
+		{
+			robotSetDirection(180);
+			robotSetAmplitude(30);
+			robotSetVitesse(3.14);
+		}
+		else if (receivedChar == 'D')
+		{
+			robotSetDirection(-90);
+			robotSetAmplitude(30);
+			robotSetVitesse(3.14);
+		}
+		else if (receivedChar == 32)
+		{
+			robotSetDirection(0);
+			robotSetAmplitude(0);
+			robotSetVitesse(0);
+		}
+	}
+
 }
 
 void UART0_sendOne()

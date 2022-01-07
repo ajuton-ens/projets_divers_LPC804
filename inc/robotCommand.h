@@ -99,7 +99,10 @@
 
 void setMotorPosition(uint8_t motorID, float position);
 void initMotorLimits();
-void marche_sinus(float vitesse, float amplitude, short direction, short rotation);
+void marche_sinus();
+void robotSetVitesse(float value);
+void robotSetAmplitude(float value);
+void robotSetDirection(short value);
 
 
 #endif /* INC_ROBOTCOMMAND_H_ */

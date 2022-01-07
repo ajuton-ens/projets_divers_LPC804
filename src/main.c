@@ -102,6 +102,7 @@ void init_peripherals()
 
 	init_GPIO();
 	init_UART0(115200);
+	init_UART1(115200);
 	init_MRT0(1.0 / T_ECH_MARCHE_ROBOT);
 }
 
