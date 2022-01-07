@@ -22,7 +22,7 @@
  Par exemple pour aller tout droit, le pied central droit et les pieds extérieurs gauche vont suivre un cercle, les autres pieds vont suivre le même cercle avec un déphasage de 180°, ce qui permet au robot d'avancer.
  
 ## Commande de la trajectoire par bluetooth
- Afin de piloter l'hexapode à distance, on utilise un périphérique permettant de convertir des données bluetooth en données lisible par liaison série.
+ Afin de piloter l'hexapode à distance, on utilise un périphérique permettant de convertir des données bluetooth en données lisible par liaison série, celles-ci sont émise via un smartphone et l'application [SENA BTerm Bluetooth Terminal](https://play.google.com/store/apps/details?id=com.sena.bterm&hl=fr&gl=US).
  Les données reçues permettent de faire les actions suivantes : 
   * 'Z' : Aller tout droit; 
   * 'Q' : Aller à gauche;
@@ -30,5 +30,5 @@
   * 'D' : Aller à droite;
   * 32 (espace) : S'arrêter; 
  
- 
+###### Rendu
  à rendre sur https://github.com/ajuton-ens/projets_divers_LPC804
