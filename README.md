@@ -12,7 +12,23 @@
  Cette interruption est désactivée lorsque l'on a plus de donnée à émettre.
  
 ## Commande en position des pattes
+ Les pattes sont pilotés en commandant la position cartésienne de l'extrémité des pieds.
+ Pour cela, on dispose de plusieurs équations permettant de passer de la position désirée, aux trois angles à envoyer aux moteur de la patte.
  
+## Trajectoire du robot
+ Le robot suit une simple trajectoire rectiligne.
+ La bibliothèque fournit était censé permettre une rotation, celle-ci n'a malheureusement jamais fonctionné.
+ Afin d'effectuer cette trajectoire rectiligne, les pieds suivent une trajectoire circulaire.
+ Par exemple pour aller tout droit, le pied central droit et les pieds extérieurs gauche vont suivre un cercle, les autres pieds vont suivre le même cercle avec un déphasage de 180°, ce qui permet au robot d'avancer.
+ 
+## Commande de la trajectoire par bluetooth
+ Afin de piloter l'hexapode à distance, on utilise un périphérique permettant de convertir des données bluetooth en données lisible par liaison série.
+ Les données reçues permettent de faire les actions suivantes : 
+  * 'Z' : Aller tout droit; 
+  * 'Q' : Aller à gauche;
+  * 'S' : Aller en arrière;
+  * 'D' : Aller à droite;
+  * 32 (espace) : S'arrêter; 
  
  
  à rendre sur https://github.com/ajuton-ens/projets_divers_LPC804
