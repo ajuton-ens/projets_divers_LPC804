@@ -10,6 +10,7 @@
 
 uint8_t answerReceived = 1;
 
+//Encode et démarre une transmission vers les moteurs
 void encodeAndSendMessage(uint8_t motorID, uint8_t length, uint8_t instruction, uint8_t *payload)
 {
 	uint8_t message[length + 4];
@@ -23,6 +24,7 @@ void encodeAndSendMessage(uint8_t motorID, uint8_t length, uint8_t instruction, 
 		message[i++] = payload[j];													//Payload
 	message[i++] = calculateChecksum(motorID, length, instruction, payload);		//Checksum
 
+	//Envoie de la trame
 	SendMessage(message, length + 4);
 }
 
@@ -32,6 +34,8 @@ uint8_t receivedLength;
 uint8_t receivedError;
 uint8_t receivedPayload[RECEIVED_BUFFER_SIZE];
 uint8_t receivedPayloadIndex = 0;
+
+//Décode les messages envoyés par les moteurs (inutile puisqu'ils n'en envoient pas)
 void decodeMessage(uint8_t c)
 {
 	switch(receivedState)
@@ -86,7 +90,7 @@ void decodeMessage(uint8_t c)
 
 void processDecodedMessage(uint8_t motorID, uint8_t length, uint8_t error, uint8_t *payload)
 {
-	//Fonction inutile pour l'instant, servira peut-être un jour...
+	//Fonction inutile pour l'instant, servira peut-être un jour...(ne servira finalement jamais...)
 	if (error == 0)
 	{
 		//pas d'erreur
@@ -100,7 +104,7 @@ void processDecodedMessage(uint8_t motorID, uint8_t length, uint8_t error, uint8
 uint8_t calculateChecksum(uint8_t motorID, uint8_t length, uint8_t instruction, const uint8_t *payload)
 {
 	//La fonction marche aussi pour les trames recu, il faut remplacer instruction par error
-	//checksum = ~(sum_i(message[i]))
+	//checksum = ~(sum_i(message[i])) <- sauf headers (0xff)
 	uint8_t checksum = motorID + length + instruction;
 	uint8_t i = 0;
 	for (i = 0; i < length - 2; i++)
@@ -109,6 +113,7 @@ uint8_t calculateChecksum(uint8_t motorID, uint8_t length, uint8_t instruction, 
 	return checksum;
 }
 
+//Fonctions utiles si les moteurs répondent (donc inutiles)
 uint8_t isAnswerReceived()
 {
 	return answerReceived;

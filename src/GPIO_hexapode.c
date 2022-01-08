@@ -9,7 +9,7 @@
 #include "LPC8xx.h"
 #include "syscon.h"
 
-
+//Initialisation du GPIO
 void init_GPIO()
 {
 	LPC_SYSCON->SYSAHBCLKCTRL0 |= GPIO;

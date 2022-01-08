@@ -16,6 +16,7 @@ uint16_t cbTx0Tail;
 uint8_t cbTx0Buffer[CBTX0_BUFFER_SIZE];
 uint8_t isTransmitting = 0;
 
+//Ajoute une trame au buffer et active l'interruption pour la transmission
 void SendMessage(uint8_t* message, uint16_t length)
 {
 	uint8_t i = 0;
@@ -33,6 +34,7 @@ void SendMessage(uint8_t* message, uint16_t length)
     }
 }
 
+//Ajoute un octet
 void CB_TX0_Add(uint8_t value)
 {
     cbTx0Buffer[cbTx0Head++] = value;
@@ -40,6 +42,7 @@ void CB_TX0_Add(uint8_t value)
         cbTx0Head = 0;
 }
 
+//Retourne un octet
 uint8_t CB_TX0_Get()
 {
 	uint8_t temp = cbTx0Buffer[cbTx0Tail++];
@@ -48,11 +51,13 @@ uint8_t CB_TX0_Get()
     return temp;
 }
 
+//Indique au buffer que la transmission est terminée
 void CB_TX0_endTransmission()
 {
 	isTransmitting = 0;
 }
 
+//Donne la taille restante dans le buffer
 uint16_t CB_TX0_RemainingSize()
 {
 	uint16_t rSize;
@@ -64,6 +69,7 @@ uint16_t CB_TX0_RemainingSize()
     return rSize;
 }
 
+//Donne la taille des données
 uint16_t CB_TX0_GetDataSize()
 {
 	uint16_t dSizeTransmit;

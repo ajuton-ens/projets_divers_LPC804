@@ -25,6 +25,7 @@
 
 int main()
 {
+	//Initialisation des périphériques
 	init_peripherals();
 	init_lcd();
 
@@ -36,7 +37,6 @@ int main()
 	uint8_t rEdge1 = 0;
 	uint8_t rEdge2 = 0;
 
-
 	while(1)
 	{
 		//Lecture des front montants des boutons
@@ -47,6 +47,7 @@ int main()
 		prevBtn1State = currentBtn1State;
 		prevBtn2State = currentBtn2State;
 
+		//Test du bon fonctionnement des moteurs par appuie bouton
 		if (rEdge1 == 1)
 		{
 			LED1 = 1;
@@ -92,20 +93,23 @@ int main()
 	}
 }
 
+//Fonction d'activation des périphériques nécessaires
 void init_peripherals()
 {
 	//Overclock 15 MHz
 	LPC_PWRD_API->set_fro_frequency(30000);
 
-	// Activation du périphérique d'entrées/sorties TOR + timer + switch matrix
+	// Activation du périphérique switch matrix
 	LPC_SYSCON->SYSAHBCLKCTRL0 |= SWM;
 
+	//Initialisation GPIO, UART, MRT
 	init_GPIO();
 	init_UART0(115200);
 	init_UART1(115200);
 	init_MRT0(1.0 / T_ECH_MARCHE_ROBOT);
 }
 
+//Fonction retournant le front d'un bouton
 uint8_t telerupteur(uint8_t btnPin, uint8_t currentBtnState, uint8_t prevBtnState)
 {
 	if (((prevBtnState) != currentBtnState) && currentBtnState == 0)

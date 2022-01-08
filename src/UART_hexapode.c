@@ -15,6 +15,7 @@
 #include "CB_TX0.h"
 #include "robotCommand.h"
 
+//Initialise l'UART0 (Envoie vers les moteurs)
 void init_UART0(uint32_t baudrate)
 {
 	LPC_SYSCON->SYSAHBCLKCTRL0 |= UART0;
@@ -29,10 +30,9 @@ void init_UART0(uint32_t baudrate)
 
 	ConfigSWM(U0_TXD, UART0_TX_PIN);		//TX -> Pin_TX
 	ConfigSWM(U0_RXD, UART0_RX_PIN);		//RX -> Pin_RX
-//	ConfigSWM(U0_TXD, DBGTXPIN);		//TX -> Pin_TX
-//	ConfigSWM(U0_RXD, DBGRXPIN);		//RX -> Pin_RX
 }
 
+//Initialise l'UART1 (Réception Bluetooth)
 void init_UART1(uint32_t baudrate)
 {
 	LPC_SYSCON->SYSAHBCLKCTRL0 |= UART1;
@@ -48,13 +48,9 @@ void init_UART1(uint32_t baudrate)
 
 	ConfigSWM(U1_TXD, UART1_TX_PIN);		//TX -> Pin_TX
 	ConfigSWM(U1_RXD, UART1_RX_PIN);		//RX -> Pin_RX
-//	ConfigSWM(U0_TXD, DBGTXPIN);		//TX -> Pin_TX
-//	ConfigSWM(U0_RXD, DBGRXPIN);		//RX -> Pin_RX
 }
 
-
-
-
+//Interruption si TX en attente d'envoie (RX inutile)
 void UART0_IRQHandler()
 {
 	if (LPC_USART0->INTSTAT & RXRDY)
@@ -63,6 +59,7 @@ void UART0_IRQHandler()
 		UART0_sendOne();
 }
 
+//Interruption si RX a reçu quelque chose
 void UART1_IRQHandler()
 {
 	if (LPC_USART1->INTSTAT & RXRDY)
@@ -102,6 +99,7 @@ void UART1_IRQHandler()
 
 }
 
+//Envoie un octet, termine la transmission quand le buffer est vide
 void UART0_sendOne()
 {
 	//Fonction à n'appeler que lors de l'interruption TXIDLE
@@ -114,12 +112,14 @@ void UART0_sendOne()
 		UART0_endTransmission();
 }
 
+//Enclenche la transmission
 void UART0_beginTransmission()
 {
 	if (CB_TX0_GetDataSize() > 0)
 		LPC_USART0->INTENSET |= TXIDLE;					//Interruption sur reception d'un octet
 }
 
+//Termine la transmission
 void UART0_endTransmission()
 {
 	LPC_USART0->INTENCLR |= TXIDLE;

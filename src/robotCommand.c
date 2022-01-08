@@ -47,9 +47,10 @@ const uint16_t positionHighLimit[18] = {MOTOR1_LIMIT_H,
 										MOTOR17_LIMIT_H,
 										MOTOR18_LIMIT_H};
 
+//Construit la payload de la trame (instructions + param.)
 void setMotorPosition(uint8_t motorID, float position)
 {
-	//Bornage de la position
+	//Mise à l'échelle + bornage de la position
 	uint16_t positionInt = (uint16_t)(position * 1023 /299.71);
 	positionInt = limitToInterval(positionInt, positionLowLimit[motorID - 1], positionHighLimit[motorID -1]);
 
@@ -62,6 +63,7 @@ void setMotorPosition(uint8_t motorID, float position)
 	encodeAndSendMessage(motorID, LENGTH_WRITE_GOAL_POSITION, INSTRUCTION_WRITE, payload);
 }
 
+//Fonction qui devait servir à imposer les limites des angles, sans passer par le logiciel dynamixel wizard
 void initMotorLimits()
 {
 	//TODO (or not todo...)
@@ -72,22 +74,27 @@ float amplitude = 0;
 short direction = 0;
 short rotation = 0;
 
-
+//Imposer la pulsation
 void robotSetVitesse(float value)
 {
 	vitesse = value;
 }
 
+//Impose le rayon
 void robotSetAmplitude(float value)
 {
 	amplitude = value;
 }
 
+//Impose le sens de la trajectoire
 void robotSetDirection(short value)
 {
 	direction = value;
 }
 
+//Calcul les positions suivantes (le calcul pourrait être très largement optimisé,
+//cela permettrait d'augmenter la fréquence d'échantillonnage et donc d'améliorer la fluidité
+//du mouvement
 void marche_sinus()
 {
 	unsigned char n_patte;

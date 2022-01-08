@@ -12,6 +12,7 @@
 uint16_t cbRx0Head, cbRx0Tail;
 uint8_t cbRx0Buffer[CBRX0_BUFFER_SIZE];
 
+//Ajoute un octet
 void CB_RX0_Add(uint8_t value)
 {
     if(CB_RX0_GetRemainingSize() > 0)
@@ -23,6 +24,7 @@ void CB_RX0_Add(uint8_t value)
 
 }
 
+//Retourne un octet
 uint8_t CB_RX0_Get()
 {
 	uint8_t value = cbRx0Buffer[cbRx0Tail++];
@@ -31,6 +33,7 @@ uint8_t CB_RX0_Get()
     return value;
 }
 
+//Indique si des données sont disponibles
 uint8_t CB_RX0_IsDataAvailable()
 {
     if(cbRx0Head != cbRx0Tail)
@@ -39,6 +42,7 @@ uint8_t CB_RX0_IsDataAvailable()
         return 0;
 }
 
+//Retourne la taille restante
 uint16_t CB_RX0_GetRemainingSize()
 {
 	uint16_t rSizeRecep;
@@ -48,6 +52,8 @@ uint16_t CB_RX0_GetRemainingSize()
         rSizeRecep = CBRX0_BUFFER_SIZE - (CBRX0_BUFFER_SIZE - cbRx0Tail + cbRx0Head);
     return rSizeRecep;
 }
+
+//Retourne la taille des données
 uint16_t CB_RX0_GetDataSize()
 {
 	uint16_t rSizeRecep;

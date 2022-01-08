@@ -7,6 +7,7 @@
 
 #include "toolbox.h"
 
+//Retourne la valeur bornée à l'intervalle [min, max]
 float limitToInterval(float value, float min, float max)
 {
 	if (value > max)
@@ -17,6 +18,7 @@ float limitToInterval(float value, float min, float max)
 		return value;
 }
 
+//Arrondi la valeur à l'entier le plus proche
 uint32_t round(float value)
 {
 	return (uint32_t)(value + 0.5);
