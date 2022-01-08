@@ -37,6 +37,9 @@
   * 'S' : Aller en arrière;
   * 'D' : Aller à droite;
   * 32 (espace) : S'arrêter; 
+
+## Diagramme synoptique
+ ![diag](https://github.com/VoltXd/TP_HEXAPODE/blob/main/image/synoptique.png)
  
 ###### Rendu
  à rendre sur https://github.com/ajuton-ens/projets_divers_LPC804
