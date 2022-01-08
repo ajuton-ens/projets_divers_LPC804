@@ -26,8 +26,8 @@
  Le robot suit une simple trajectoire rectiligne.
  La bibliothèque fournit était censé permettre une rotation, celle-ci n'a malheureusement jamais fonctionné.
  Afin d'effectuer cette trajectoire rectiligne, les pieds suivent une trajectoire circulaire.
- Par exemple pour aller tout droit, le pied central droit et les pieds extérieurs gauche vont suivre un cercle, les autres pieds vont suivre le même cercle avec un déphasage de 180°, ce qui permet au robot d'avancer.
- <iframe width="1280" height="720" src="https://youtu.be/M41KNuEWdtw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ Par exemple pour aller tout droit, le pied central droit et les pieds extérieurs gauche vont suivre un cercle, les autres pieds vont suivre le même cercle avec un déphasage de 180°, ce qui permet au robot d'avancer.  
+ [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/M41KNuEWdtw/0.jpg)](https://www.youtube.com/watch?v=M41KNuEWdtw)
  
 ## Commande de la trajectoire par bluetooth
  Afin de piloter l'hexapode à distance, on utilise un périphérique permettant de convertir des données bluetooth en données lisible par liaison série, celles-ci sont émise via un smartphone et l'application [SENA BTerm Bluetooth Terminal](https://play.google.com/store/apps/details?id=com.sena.bterm&hl=fr&gl=US).
