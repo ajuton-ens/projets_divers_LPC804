@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "CarteUE441_v2-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/CarteUE441_v2-eagle-import.kicad_sym")(options "")(descr ""))
+  (lib (name "aJ")(type "KiCad")(uri "${KIPRJMOD}/aJ.kicad_sym")(options "")(descr ""))
+)
