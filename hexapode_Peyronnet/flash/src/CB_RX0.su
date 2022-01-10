@@ -1,5 +1,0 @@
-../src/CB_RX0.c:15:6:CB_RX0_Add	16	static
-../src/CB_RX0.c:26:9:CB_RX0_Get	16	static
-../src/CB_RX0.c:34:9:CB_RX0_IsDataAvailable	8	static
-../src/CB_RX0.c:42:10:CB_RX0_GetRemainingSize	16	static
-../src/CB_RX0.c:51:10:CB_RX0_GetDataSize	16	static

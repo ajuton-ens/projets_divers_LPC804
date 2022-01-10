@@ -1,3 +1,0 @@
-../src/main.c:26:5:main	24	static
-../src/main.c:95:6:init_peripherals	8	static
-../src/main.c:109:9:telerupteur	24	static

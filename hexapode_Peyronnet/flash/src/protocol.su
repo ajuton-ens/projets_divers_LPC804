@@ -1,7 +1,0 @@
-../src/protocol.c:13:6:encodeAndSendMessage	72	dynamic
-../src/protocol.c:35:6:decodeMessage	16	static
-../src/protocol.c:87:6:processDecodedMessage	24	static
-../src/protocol.c:100:9:calculateChecksum	32	static
-../src/protocol.c:112:9:isAnswerReceived	8	static
-../src/protocol.c:117:6:setAnswerWaiting	8	static
-../src/protocol.c:122:6:setAnswerReceived	8	static

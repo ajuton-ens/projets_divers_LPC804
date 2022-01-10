@@ -1,6 +1,0 @@
-../src/CB_TX0.c:19:6:SendMessage	32	static
-../src/CB_TX0.c:36:6:CB_TX0_Add	16	static
-../src/CB_TX0.c:43:9:CB_TX0_Get	16	static
-../src/CB_TX0.c:51:6:CB_TX0_endTransmission	8	static
-../src/CB_TX0.c:56:10:CB_TX0_RemainingSize	16	static
-../src/CB_TX0.c:67:10:CB_TX0_GetDataSize	16	static

@@ -1,6 +1,0 @@
-../src/robotCommand.c:50:6:setMotorPosition	40	static
-../src/robotCommand.c:65:6:initMotorLimits	8	static
-../src/robotCommand.c:76:6:robotSetVitesse	16	static
-../src/robotCommand.c:81:6:robotSetAmplitude	16	static
-../src/robotCommand.c:86:6:robotSetDirection	16	static
-../src/robotCommand.c:91:6:marche_sinus	288	static
