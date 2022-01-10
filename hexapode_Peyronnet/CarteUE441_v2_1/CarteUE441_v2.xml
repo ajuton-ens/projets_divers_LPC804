@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\Projet\CarteUE441_v2_1\CarteUE441_v2.kicad_sch</source>
+    <date>09/01/2022 16:46:00</date>
+    <tool>Eeschema (6.0.0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>CarteUE441_v2.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BT1">
+      <value>Battery</value>
+      <footprint>Connector_AMASS:AMASS_XT60-F_1x02_P7.20mm_Vertical</footprint>
+      <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9785dc64-af98-4f6f-b21a-976e62884720</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>330nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47cc9177-14c2-46ed-8cb8-45a1cf06dac2</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9872aef8-0cf3-4acb-88fa-03b46c7b51de</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.7mm_Pad</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b801903d-2ba1-4c1b-918a-1ee590363ed5</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.7mm_Pad</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5ca6f444-baa6-442e-a55c-e8853aa5b5b7</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.7mm_Pad</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>60480c66-6936-4ddb-93d5-d2d723fdf632</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>SERIE</value>
+      <footprint>CarteUE441_v2:CON-LSTA_FE06</footprint>
+      <libsource lib="CarteUE441_v2-eagle-import" part="FE06-1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d7f078a5-0ebe-4b25-ba0b-04fe5686b329</tstamps>
+    </comp>
+    <comp ref="JST_L1">
+      <value>Conn_01x03_Male</value>
+      <footprint>Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Male" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f907281c-d153-4b2a-b702-4230daf9e09b</tstamps>
+    </comp>
+    <comp ref="JST_R1">
+      <value>Conn_01x03_Male</value>
+      <footprint>Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Male" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a5b9a9b-9a59-4220-8070-a1ee396e105f</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>560</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <libsource lib="CarteUE441_v2-eagle-import" part="R-EU_M1206" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de83f582-cbfb-42f1-8fcd-254248d68093</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>1kOhm</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>50417bca-51fb-4b74-92e8-cc80dc63264e</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>560</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <libsource lib="CarteUE441_v2-eagle-import" part="R-EU_M1206" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17923a49-1ab0-48d2-8104-5d730df98927</tstamps>
+    </comp>
+    <comp ref="Regu1">
+      <value>L7805</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="L7805" description="Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cb9c2f2b-c6cf-4af4-8155-0c91bdf9e065</tstamps>
+    </comp>
+    <comp ref="U0">
+      <value>XPRESSO_804</value>
+      <footprint>CarteUE441_v2:LIB_ENS_AJ_V1_XPRESSO_804</footprint>
+      <libsource lib="CarteUE441_v2-eagle-import" part="XPRESSO_804" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="CarteUE441_v2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>05e59049-ade4-4d97-91ad-ac03a58bb205</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="CarteUE441_v2-eagle-import" part="FE06-1">
+      <fields>
+        <field name="Reference">SV</field>
+        <field name="Value">FE06-1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CarteUE441_v2-eagle-import" part="R-EU_M1206">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-EU_M1206</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CarteUE441_v2-eagle-import" part="XPRESSO_804">
+      <fields>
+        <field name="Value">XPRESSO_804</field>
+      </fields>
+      <pins>
+        <pin num="5V_USB" name="5V_USB" type="bidirectional"/>
+        <pin num="P$1" name="P018" type="bidirectional"/>
+        <pin num="P$2" name="P016_SPICSW25X10" type="bidirectional"/>
+        <pin num="P$3" name="P017_ADC9" type="bidirectional"/>
+        <pin num="P$4" name="P013_USERBUTTON_LED2" type="bidirectional"/>
+        <pin num="P$5" name="P012_ISP_BUTTON_LED3" type="bidirectional"/>
+        <pin num="P$6" name="P05_RESET" type="bidirectional"/>
+        <pin num="P$7" name="P04_TXD_PC" type="bidirectional"/>
+        <pin num="P$8" name="SWCLK" type="bidirectional"/>
+        <pin num="P$9" name="SWDIO" type="bidirectional"/>
+        <pin num="P$10" name="P011_LED4" type="bidirectional"/>
+        <pin num="P$11" name="P010_ADC7" type="bidirectional"/>
+        <pin num="P$12" name="P021" type="bidirectional"/>
+        <pin num="P$13" name="P020" type="bidirectional"/>
+        <pin num="P$14" name="P015_ADC8" type="bidirectional"/>
+        <pin num="P$15" name="P01_SPISCK" type="bidirectional"/>
+        <pin num="P$16" name="P09_SPIMISO" type="bidirectional"/>
+        <pin num="P$17" name="P08_SPIMOSI" type="bidirectional"/>
+        <pin num="P$18" name="VDD" type="bidirectional"/>
+        <pin num="P$19" name="GND" type="bidirectional"/>
+        <pin num="P$20" name="P07_I2CSDA" type="bidirectional"/>
+        <pin num="P$21" name="MCU_VREF" type="bidirectional"/>
+        <pin num="P$22" name="P00_RXD_PC" type="bidirectional"/>
+        <pin num="P$23" name="P014_I2CSCL" type="bidirectional"/>
+        <pin num="P$24" name="P019_DACOUT" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Male">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery">
+      <description>Multiple-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="L7805">
+      <description>Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252</description>
+      <docs>http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf</docs>
+      <footprints>
+        <fp>TO?252*</fp>
+        <fp>TO?263*</fp>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L7805</field>
+        <field name="Datasheet">http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="CarteUE441_v2-eagle-import">
+      <uri>C:\Users\Andre\Desktop\Etudes\ENS\Cours\M1 - E3A\S1\441 - Informatique Industrielle\Projet\CarteUE441_v2_1/CarteUE441_v2-eagle-import.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+12V">
+      <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="JST_L1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="JST_R1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="Regu1" pin="1" pinfunction="IN" pintype="power_in"/>
+    </net>
+    <net code="2" name="/Rx0">
+      <node ref="JST_L1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="JST_R1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U0" pin="P$10" pinfunction="P011_LED4" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="/Tx0">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U0" pin="P$2" pinfunction="P016_SPICSW25X10" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/UART_RX1">
+      <node ref="J2" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="R7" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="5" name="/UART_TX1">
+      <node ref="J2" pin="5" pinfunction="5" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="6" name="/VCC_5V">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="Regu1" pin="3" pinfunction="OUT" pintype="power_out"/>
+      <node ref="U0" pin="5V_USB" pinfunction="5V_USB" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/VDD">
+      <node ref="J2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U0" pin="P$18" pinfunction="VDD" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="GND">
+      <node ref="BT1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="H1" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H2" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H3" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="J2" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="JST_L1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="JST_R1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Regu1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U0" pin="P$19" pinfunction="GND" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U0" pin="P$1" pinfunction="P018" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="Net-(R7-Pad1)">
+      <node ref="R7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U0" pin="P$13" pinfunction="P020" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="unconnected-(J2-Pad1)">
+      <node ref="J2" pin="1" pinfunction="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="12" name="unconnected-(J2-Pad6)">
+      <node ref="J2" pin="6" pinfunction="6" pintype="passive+no_connect"/>
+    </net>
+    <net code="13" name="unconnected-(U0-PadP$3)">
+      <node ref="U0" pin="P$3" pinfunction="P017_ADC9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="14" name="unconnected-(U0-PadP$4)">
+      <node ref="U0" pin="P$4" pinfunction="P013_USERBUTTON_LED2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(U0-PadP$5)">
+      <node ref="U0" pin="P$5" pinfunction="P012_ISP_BUTTON_LED3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(U0-PadP$6)">
+      <node ref="U0" pin="P$6" pinfunction="P05_RESET" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(U0-PadP$7)">
+      <node ref="U0" pin="P$7" pinfunction="P04_TXD_PC" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(U0-PadP$8)">
+      <node ref="U0" pin="P$8" pinfunction="SWCLK" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(U0-PadP$9)">
+      <node ref="U0" pin="P$9" pinfunction="SWDIO" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(U0-PadP$11)">
+      <node ref="U0" pin="P$11" pinfunction="P010_ADC7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(U0-PadP$12)">
+      <node ref="U0" pin="P$12" pinfunction="P021" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(U0-PadP$14)">
+      <node ref="U0" pin="P$14" pinfunction="P015_ADC8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U0-PadP$15)">
+      <node ref="U0" pin="P$15" pinfunction="P01_SPISCK" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U0-PadP$16)">
+      <node ref="U0" pin="P$16" pinfunction="P09_SPIMISO" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U0-PadP$17)">
+      <node ref="U0" pin="P$17" pinfunction="P08_SPIMOSI" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U0-PadP$20)">
+      <node ref="U0" pin="P$20" pinfunction="P07_I2CSDA" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(U0-PadP$21)">
+      <node ref="U0" pin="P$21" pinfunction="MCU_VREF" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U0-PadP$22)">
+      <node ref="U0" pin="P$22" pinfunction="P00_RXD_PC" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U0-PadP$23)">
+      <node ref="U0" pin="P$23" pinfunction="P014_I2CSCL" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U0-PadP$24)">
+      <node ref="U0" pin="P$24" pinfunction="P019_DACOUT" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

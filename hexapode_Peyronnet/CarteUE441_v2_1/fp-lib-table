@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "CarteUE441_v2")(type "Eagle")(uri "${KIPRJMOD}/CarteUE441_v2.lbr")(options "")(descr ""))
+)
